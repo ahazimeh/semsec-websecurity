@@ -1,0 +1,13 @@
+if I am testing a company, I can try to ping each device on the network to get where the devices are:
+there is a tool to do this processes
+
+telnet: not incripted
+
+maleware contains word document that contains vba
+
+
+on wireshare click left click and follow to view the data
+
+ssdp is a protocol used in windows: http.request and !(ssdp)
+
+smtp: to read the content the go to file -> Export Objects -> IMF
