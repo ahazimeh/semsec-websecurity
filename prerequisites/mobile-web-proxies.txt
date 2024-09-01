@@ -1,0 +1,3 @@
+burp: proxy interceptor
+
+jadx-gui // reverse engineering // install jadx

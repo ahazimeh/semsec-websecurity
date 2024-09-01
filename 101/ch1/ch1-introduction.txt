@@ -1,0 +1,52 @@
+red team (offensive security) vs blue team(defensive security)
+black hat vs white hat vs gray hat
+
+Penetration testing phases
+  information gathering
+  vulnerability assesment: look for security holes
+  exploitation
+  post exploitation: after exploitation, check if we can stay inside machine for example
+  reporting
+
+Penetration testing
+  performed during a specific time period
+  follow a systemetic and structured approach
+  payment: paid per project
+Bug Bounty
+  typically run continuously
+  decentralized and crowd-sourced approach
+  reward: per valid report
+
+setting up the lab
+  Nat: virtual machine have specific address over the internet, this address is only clear for the main os
+  Bridged adapter: os is separate pc from virtual machine on the same network
+
+linux commands
+  find . -type f -name page.tsx // d rather than f for directory
+  locate nmap // it looks for files that were added, updates every 24 hours, I can force updating it
+
+Users privileges
+  adduser majddhani sudo
+update: update list of repository that have the packages and tools
+updagrade: conntect to repository and upgrade these packages and  tools
+
+Port:
+  open ports: sudo netstat -tulpn
+
+traceroute google.com // path of request
+
+sudo service apache2 start // status and stop
+
+
+ Breaking Encryption
+A brief overview of some common methods used to break encryption:
+Brute force attacks: (Caesar cipher)
+  In this method, an attacker tries every possible combination of characters until they find the right decryption key
+Cryptanalysis:
+  This involves analyzing the algorithm used to encrypt the message and exploiting weaknesses in the algorithm to decrypt the message.
+Social engineering:
+  This method involves tricking or persuading someone to reveal the encryption key or password, which can be easier than trying to break the encryption itself.
+
+hash sum can be used to detect whether the file wasn't modified while being delivered
+
+you can encrypt something with private key as a signature
