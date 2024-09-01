@@ -1,0 +1,72 @@
+https://www.youtube.com/watch?v=ZtqBQ68cfJc&t=998s
+
+whoami
+open (os specific) -> alternative: xdg-open . // open a file
+less and more
+wc: word count
+sort fileName
+unique:
+  reports or omits repeated lines // remove adjacet similar lines
+  so it can be uesd with sort
+
+expansion
+  echo ~ $PATH * ?
+  echo {a,b,c}.txt
+  touch app.{js,html,css,py}
+  so basically the shell expands some smaller things into a larger pieces of text
+
+diff: difference between 2 files // -u and -y
+
+du: find sizes of files and directories on machine // give it a path
+
+du -h | sort -hr | tail // get the largest files
+
+df: information of the mounted files // how much these files are taking memory
+
+ps: process
+
+ps -ax: all processes initiated by all users
+
+top: tells us top cpu intensive processes
+top -o mem // sort by memory, it didn't work
+
+killall provide a name rather than id, such
+  killall -9 node
+
+jobs, bg, fg
+
+jobs, you can check stopped processes
+fg 2
+
+gzip compression
+gzip -k filename // keep original file
+unzip: gzip -d or use gunzip
+
+tar to combine several files together
+tar // z flag to compress as well
+
+aliasa // alias myls='ls -la'
+  I can define aliases in .bash_aliases or bashrc // depending on distr
+on mac I can define them inside .zshrc
+
+single qutations don't allow expansion but double do
+
+xargs take output of 1 command and take it into argument for second command
+ls | sort // we are not passing arguments, sort is setup to accept values through standard inputs
+also setup to accept arguments
+so for rm this won't work
+  cat deadPlayers.txt | rm
+this will work
+  cat deadPlayers.txt | xargs rm
+
+ln (hardlink and softlink)
+
+ln original.txt hardlink.txt
+ln -s original.txt symlink.txt // if original got deleted then this will break
+
+who tells me users that are logged in
+
+passwd // change someone password
+passwd elvis
+
+chown and chmod
