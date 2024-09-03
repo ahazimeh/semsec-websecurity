@@ -40,3 +40,8 @@ aircrack-ng -w rockyou.txt /home/alihazimeh/Desktop/semsec-websecurity/wpa_hacki
 crunch, cewel, john the ripper // tools to generate my own wordlist
 generate a file: add some info on separate lines // hasan, achek, 1999
 john --wordlist=keywords.txt --rules --stdout > custom_wordlist.txt
+
+ARP Protocol
+message go to router, bob will ask all devices whether they are the router(looking for an ip address), the router will say she is the router giving you the mac address (same thing will happen between first and second router...)
+
+I can tell people in the network that I am the router giving them my mac address to become man in the middle
