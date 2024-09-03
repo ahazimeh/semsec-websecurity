@@ -1,0 +1,3 @@
+logical volnerabilities
+
+learn from others' bug bounty
