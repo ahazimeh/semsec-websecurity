@@ -76,4 +76,11 @@ nmap 192.168.1.101 // he got back all ports that exists on tcp with their servic
   // for ezample port 80 probably corresponds to a web server
   nmap -sV 192.168.1.101
 
+https://book.hacktricks.xyz/generic-methodologies-and-resources/pentesting-network
+recommended books and articles:
+The TCP/IP Guide: A Comprehensive, Illustrated Internet Protocols Reference: https://www.amazon.com/TCP-Guide-Comprehensive-Illustrated-Protocols/dp/159327047X/ref=sr_1_1?keywords=The+TCP_IP+Guide&qid=1695128933&s=books&sr=1-1
+How exactly does 4-way handshake cracking work (theoretically)?
+Advanced WIFI penetration Testing:https://book.hacktricks.xyz/generic-methodologies-and-resources/pentesting-wifi
 
+https://www.youtube.com/watch?v=PG9oKZdFb7w
+https://www.youtube.com/watch?v=JRVb-xE1zTI&t=1s
