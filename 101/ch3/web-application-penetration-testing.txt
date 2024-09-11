@@ -1,0 +1,98 @@
+referer: (if I clicked from instagram to reach academy website so the referer will be instagram)
+head method functions in the same way as a GET request, except the server should not return a message body in its response, it can be used to check if a source is present before making a GET request for it.
+encoding is used to replace some character that have certain meening with other characters
+
+google dorking:
+  site: tells google to show you results from a certain site only.
+  Example: xss site:owasp.org
+  inurl: searches for pages with a URL that match the search string.
+  Example: inurl:"admin/default.aspx"
+  intitle: finds specific strings in a page's title.
+  Example: intitle:"index of"
+  Wildcard (*): using it you within searches to mean
+  any character or series of characters.
+  Quotes (""): adding quotation marks around your search terms forces an
+  exact match.
+  OR (1): this operator can be used to search for one search term or other.
+  Example: "xss" site:(owasp.org I portswigger.net)
+  Minus (-): this operator excludes certain search
+  results.
+  Example. site.*.facebook.com -"www.facebook.com"
+    examples:
+    intitle:"login" site:semicolonlb.com
+    site:semicolonlb.com filetype:pdf
+    "username"|"password" site:semicolonlb.com
+    site:semicolonlb.com inurl:"/admin/"
+    04:15
+
+sudo apt-get install subfinder
+subfinder -d semicolonlb.com
+subfinder -ls // methods this tool can use to get these subdomains, some of these tools need api keys that requires us to update them in the configurations
+
+directory brute forcing
+  gobuster dir -u https://semicolonlb.com -w ./dirb/big.txt
+
+
+turbo intruder
+
+access control, we should control the access for users
+  verticle (student, and instructor)
+  horizontal (student, and student)
+
+access control vulnerabilities (IDOR), such as when sending your id in the url // it is when I can do an action that I shouldn't be allowed to do
+same could be for invoice files
+
+CSRF burp suit: engagement tools, geenrate CSRF pos
+csrf token should exist and be requireed and can be used by 1 user and not shared with everyone
+
+Clickjacking
+preventing Clickjacking
+  -Use headers like X-Frame-Options to control how a page is displayed in a
+  frame or iframe and prevent clickjacking attacks.
+  -Implement a Content-Security-Policy header to restrict the types of
+  content that a page can load and prevent clickjacking attacks that load
+  malicious content.
+
+Types of X-Frame-Options:
+DENY (X-Frame-Options: DENY)
+SAMEORIGIN (X-Frame-Options: SAMEORIGIN)
+ALLOW-FROM uri (X-Frame-Options: ALLOW-PROM https://websitename.com/)
+
+Content Security Policy (CSP)
+• The policy can restrict the types of content that can be loaded on a site,
+including images, scripts, and stylesheets.
+• An additional layer of security for websites that helps prevent various
+types of attacks, including XSS and clickjacking.
+• Can help prevent malicious actors from injecting
+unwanted or harmful content into a website.
+
+CSP Type:
+-To prevent other websites from embedding our content in an iframe, as only pages
+on the same domain as our site will be allowed to embed it; We can add the
+following header:
+*Content-Security-Policy: frame-ancestors 'self';
+To allow only images to be loaded or framed from your website, you can use the
+following CSP policy:
+*Content-Security-Policy: default-src 'self'; img-src 'self'
+
+reflected xss: // for a reflection point
+https://portswigger.net/web-security/cross-site-scripting/cheat-sheet
+
+stored xss is same as reflected but storing data in the database
+
+for lab 3: is it realistic for a website to do html encoding, how did he guess the encoding if not for the lab title
+tiktok xss, can we reproduce it in react
+
+csp, I can block websites that can be called from my website
+
+sql injection:
+select * from users where username='' or 1=1 --
+
+adding ' to figure out whether I can do sql injection
+
+UNION Based SQLI:
+union select null, null, null, ... (until I don't get an error)
+after this I try to: union select null, 'a', null --, // to know whether the 2nd field is a string;
+after this:
+UNION SELECT table_name, column_name, NULL FROM
+information_schema.columns --
