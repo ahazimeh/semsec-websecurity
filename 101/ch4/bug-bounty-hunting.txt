@@ -1,0 +1,48 @@
+Road Map:
+  OWASP TOP 10 (Open Web Application Security Project)
+  Labs/CTFs
+  Learning programming
+  Books/Courses -> Welcome to ETH101
+  Read others reports and follow communities
+
+Resources
+  ETH 101 Course by Semicolon Academy
+  Books
+    A The Web Application Hacker's Handbook
+    Real-World Bug Hunting: A Field Guide to Web Hacking
+    (by Peter Yaworski)
+  Writeups & Labs
+    bugreader.com
+    Portswigger Lab: https://portswigger.net/web-security
+
+Top Platforms for Bug Bounty Programs
+  A HackerOne
+  BugCrowd
+
+Submitting a report:
+  Finding a Valid Bug
+  Writing a Well-Written Report
+    Title, Description, Impact
+    Setup and Reproduction steps
+    Additional Information (e.g Videos/Screenshots)
+    Recommendations or Suggested Fixes
+  Submitting the Report
+
+Process of bounty report
+Pre-Triaged -> Triaged -> Fix -> Reward
+N/A
+Informative
+Duplicate | Self Duplicate
+
+collection inside collection, long text,
+
+Demo Reports:
+former messenger member(information disclosure)
+description on instagram
+Real World Example: Messenger Private Attachements // TODO ask
+
+work on labs from portswigger
+
+Bug Bounty Bootcamp: The Guide to Finding and Reporting Web Vulnerabilities: https://www.amazon.com/Bug-Bounty-Bootcamp-Reporting-Vulnerabilities/dp/1718501544/ref=sr_1_1?crid=A3BWBJ46JMTT&keywords=bug+bounty+bootcamp&qid=1695141836&s=books&sprefix=bug+bounty+bootcamp%2Cstripbooks-intl-ship%2C228&sr=1-1
+All public bug bounty reports on hackerone (2023 till now):https://drive.google.com/file/d/1sFZ-uuBPARbqyxqQyDXLXvXGl3R8y8zb/view
+Bugreader.com:https://bugreader.com/
