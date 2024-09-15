@@ -1,0 +1,28 @@
+bug where he can know whether this email is for certain user or not depending oon the response using the reset password endpoint
+sq injection can be difficult specially with the automated scanners
+
+rce exploit
+ctf bug bounty
+
+facebook vulnerabilities
+idore in facebook
+
+mobile
+xenomorph maleware
+unix web: exchange
+magisc freeda
+
+How to improve my web application security
+knowledge?
+
+Practice, practice, practice makes perfect.
+Read books (The Web Application Hacker's Handbook, Real-World Bug
+Hunting), blogs, write-ups (pentesterland, hackerone hacktivity, Twitter,
+bugreader).
+Subscribe youtube channels (John Hammond,
+PwnFunction, Nahmsec, LiveOverflow)
+
+-How to improve my web application security knowledge
+  Solve web security academy challenges
+  Hack the box
+  learn from others

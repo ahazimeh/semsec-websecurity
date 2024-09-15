@@ -1,0 +1,39 @@
+bridged and not nat makes the machine with its own ip as a machine
+
+service apache2 start
+sudo apt-get install openssh-server
+service ssh start
+ssh kali@192.168.... // I can also use putty
+netstat -tuln
+
+/etc/hosts
+
+
+apt-get install dnsmasq
+vim /etc/dnsmasq.conf
+address=/weth201.local/192.168.1.105
+
+service dnsmasq start
+now on main os use manual dns server
+now access weth201.local
+
+curl weth201.local/index.txt
+
+zip -r - Last | curl --upload-file - https://transfer.sh/last.zip
+
+websocket:
+  websocket handshake
+load balancer will distribute requests into more than server for a lot of requests
+
+web caching:
+  like caching css, html, images
+  webcache deception, webcache poisoning
+
+content delivery networks (CDN)
+  cdns are deployed into most places and users access closest server
+
+web application firewall (WAF)
+  filter and block for suspicious requests
+  it can block sql injection requests for example
+  detect whether a website contains waf
+    wafwOOf -v https://academy.semsec.org
