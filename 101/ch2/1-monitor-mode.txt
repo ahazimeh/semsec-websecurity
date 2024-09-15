@@ -1,0 +1,10 @@
+to enable monitor mode
+  manual:
+    ifconfig wlan0 down
+    iwconfig wlan0 mode monotor
+    ifconfig wlan0 up
+    iwconfig
+  airmon-ng:
+    airmon-ng start wlan0
+    iwconfig
+

@@ -1,0 +1,4 @@
+crunch, cewel, john the ripper // tools to generate my own wordlist
+generate a file: add some info on separate lines // hasan, achek, 1999
+john --wordlist=keywords.txt --rules --stdout > custom_wordlist.txt
+
