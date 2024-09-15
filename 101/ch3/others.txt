@@ -1,0 +1,7 @@
+//
+referer: (if I clicked from instagram to reach academy website so the referer will be instagram)
+head method functions in the same way as a GET request, except the server should not return a message body in its response, it can be used to check if a source is present before making a GET request for it.
+encoding is used to replace some character that have certain meening with other characters
+
+//
+turbo intruder

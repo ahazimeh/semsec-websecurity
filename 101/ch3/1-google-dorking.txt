@@ -1,0 +1,22 @@
+google dorking:
+  site: tells google to show you results from a certain site only.
+  Example: xss site:owasp.org
+  inurl: searches for pages with a URL that match the search string.
+  Example: inurl:"admin/default.aspx"
+  intitle: finds specific strings in a page's title.
+  Example: intitle:"index of"
+  Wildcard (*): using it you within searches to mean
+  any character or series of characters.
+  Quotes (""): adding quotation marks around your search terms forces an
+  exact match.
+  OR (1): this operator can be used to search for one search term or other.
+  Example: "xss" site:(owasp.org I portswigger.net)
+  Minus (-): this operator excludes certain search
+  results.
+  Example. site.*.facebook.com -"www.facebook.com"
+    examples:
+    intitle:"login" site:semicolonlb.com
+    site:semicolonlb.com filetype:pdf
+    "username"|"password" site:semicolonlb.com
+    site:semicolonlb.com inurl:"/admin/"
+    04:15

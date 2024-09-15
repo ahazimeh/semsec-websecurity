@@ -1,0 +1,17 @@
+Content Security Policy (CSP)
+• The policy can restrict the types of content that can be loaded on a site,
+including images, scripts, and stylesheets.
+• An additional layer of security for websites that helps prevent various
+types of attacks, including XSS and clickjacking.
+• Can help prevent malicious actors from injecting
+unwanted or harmful content into a website.
+
+CSP Type:
+-To prevent other websites from embedding our content in an iframe, as only pages
+on the same domain as our site will be allowed to embed it; We can add the
+following header:
+*Content-Security-Policy: frame-ancestors 'self';
+To allow only images to be loaded or framed from your website, you can use the
+following CSP policy:
+*Content-Security-Policy: default-src 'self'; img-src 'self'
+

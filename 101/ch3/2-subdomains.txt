@@ -1,0 +1,7 @@
+sudo apt-get install subfinder
+subfinder -d semicolonlb.com
+subfinder -ls // methods this tool can use to get these subdomains, some of these tools need api keys that requires us to update them in the configurations
+
+directory brute forcing
+  gobuster dir -u https://semicolonlb.com -w ./dirb/big.txt
+

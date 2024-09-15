@@ -1,0 +1,8 @@
+access control, we should control the access for users
+  verticle (student, and instructor)
+  horizontal (student, and student)
+
+access control vulnerabilities (IDOR), such as when sending your id in the url // it is when I can do an action that I shouldn't be allowed to do
+same could be for invoice files
+
+

@@ -1,0 +1,10 @@
+reflected xss: // for a reflection point
+https://portswigger.net/web-security/cross-site-scripting/cheat-sheet
+
+stored xss is same as reflected but storing data in the database
+
+for lab 3: is it realistic for a website to do html encoding, how did he guess the encoding if not for the lab title
+tiktok xss, can we reproduce it in react
+
+csp, I can block websites that can be called from my website
+

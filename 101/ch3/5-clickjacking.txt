@@ -1,0 +1,12 @@
+Clickjacking
+preventing Clickjacking
+  -Use headers like X-Frame-Options to control how a page is displayed in a
+  frame or iframe and prevent clickjacking attacks.
+  -Implement a Content-Security-Policy header to restrict the types of
+  content that a page can load and prevent clickjacking attacks that load
+  malicious content.
+
+Types of X-Frame-Options:
+DENY (X-Frame-Options: DENY)
+SAMEORIGIN (X-Frame-Options: SAMEORIGIN)
+ALLOW-FROM uri (X-Frame-Options: ALLOW-PROM https://websitename.com/)

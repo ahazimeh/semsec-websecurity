@@ -1,0 +1,3 @@
+CSRF burp suit: engagement tools, geenrate CSRF pos
+csrf token should exist and be requireed and can be used by 1 user and not shared with everyone
+
