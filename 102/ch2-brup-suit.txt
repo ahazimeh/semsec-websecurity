@@ -1,0 +1,8 @@
+Burp Suite
+Charles Proxy
+MITMProxey
+Zed Attack Proxy (ZAP)
+
+setting -> search:font -> display -> dark
+
+proxy -> http history

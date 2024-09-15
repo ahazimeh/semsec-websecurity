@@ -1,0 +1,45 @@
+hackerone
+bugcrowd
+yeswehack
+
+x-hackerone: username
+
+go to complex sites
+
+logical
+idor
+broken access control
+
+ransomwere: encrypt data
+
+lockbit: hackers bl ransomwere
+
+defacement (as hacked by ...) https://www.zone-h.org/?hz=1
+
+1- what is an APT hacker (hacker that gains prolonged access and stay undetected)
+2- Where can we find APT hackers techniques
+You can find APT hacker techniques in:
+
+MITRE ATT&CK: A database of APT methods.
+Threat reports: From companies like FireEye or CrowdStrike.
+Cybersecurity blogs: Such as ThreatPost or BleepingComputer.
+
+digital forensics to know how I got hacked
+
+honeypot: fack system to attract hackers and then know what techniques hackers did
+
+active directory
+
+red teaming has more salary but less jobs
+
+penetration tester always gets paid whereas bug bounty hunter gets paid on vulnerabilities
+
+api pentesting
+
+https://hackerassociate.com/
+
+PCI compliane: they must do pentest before you can
+
+etc/skel, what data you put, any user will get what is inside it
+
+https://linuxsurvival.com/ //linux course
