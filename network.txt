@@ -43,3 +43,16 @@ PCI compliane: they must do pentest before you can
 etc/skel, what data you put, any user will get what is inside it
 
 https://linuxsurvival.com/ //linux course
+
+bin contains main commands
+etc contains configurations, most important etc/shadow, it has all my passwords
+etc/passwd contains the users in the system
+tmp added a file wiill disapear after reboot
+var logs
+
+python3 -m http.server // I can run a server to get upload files
+
+cloud flare uses lava lamps
+
+wps
+evil twin attack
