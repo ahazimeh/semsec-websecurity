@@ -6,3 +6,24 @@ Zed Attack Proxy (ZAP)
 setting -> search:font -> display -> dark
 
 proxy -> http history
+
+I can highlight and comment and then above filter by highlight or comment
+
+Bambda mode: (now I want to look for responses that got the word hacking)
+if(requestResponse.response().contains("hacking", false)) {
+  return true;
+  }
+  return false;
+
+
+if(requestResponse.response().statusCode() === 301) {
+  return true;
+  }
+  return false
+
+
+if(requestResponse.response().statusCode() === 301) {
+  requestResponse.annotations().setHighlightColor(HighlightColor.RED) // highlight this response
+  return true;
+}
+  return true;
