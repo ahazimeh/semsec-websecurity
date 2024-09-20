@@ -27,3 +27,10 @@ if(requestResponse.response().statusCode() === 301) {
   return true;
 }
   return true;
+
+-show only in scope items (to show for example only requests to facebook.com)
+  after checking it go to target -> scope settings -> Target scopes
+  http://semsec.org/ plus include all subdomains
+-I can also download scope settings then
+  go to project -> project settings then load
+

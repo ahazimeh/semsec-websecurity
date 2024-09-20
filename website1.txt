@@ -1,0 +1,44 @@
+classcentral.com // he asked about it
+
+one of the best exams in cyber OSCP
+PNPT
+
+ssrf: the ability to obligate a server to send a request to a specific url (like a private url)
+  app.com/urltoss?url=192.168...
+  if website have security for this then I can try to transform it to hex format // or try to change it to any format
+    or give him a real website and redirect him to something else
+    or try put spaces between them
+
+sanatization
+
+active directory networks: all computeres are connected to 1 computer
+IBM {username and password}
+
+immunefi
+
+post based xss
+
+what I can benifit from js frontend,
+  comments
+  new endpoints
+  api paramters (formData)
+  api tokens
+
+use link finder to gather all urls
+
+Google -> Text-info
+Shodan -> device-info
+
+https://www.shodan.io/
+country:lb has_screenshots
+
+-port:3389
+
+google dorking: ext:pdf cyber
+  site:lb intitle:admin login
+
+directory brutforcing
+
+dirsearch // search for directories, like gobuster bas bigger word list
+
+he took the id of an image in the series and then deleted the series, the image from fb got deleted
