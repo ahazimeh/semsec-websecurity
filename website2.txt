@@ -1,0 +1,39 @@
+username@wearehackerone.com
+
+open redirect
+
+cyberdefender
+
+show original -> get the headers and give it to any header analyser
+    check whether the email is same
+    check for ip address that the sender has
+        check from abuse ip website
+
+mail envelop
+mail data
+
+MSSP: security company that provides SOC/Security to other companies
+
+
+DOS: big text, conflict with another reference
+
+ClickJacker
+
+xss, and bugbounty
+
+information schema
+
+2nd order sql injection (stored sql injection)
+
+Reflected XSS
+Stored XSS
+DOM XSS
+Blind XSS (same as stored but indirectly) // can be found in the feedback for example
+
+
+xss report (make payload)
+
+sans certificate
+
+cybercheff // tool
+https://gchq.github.io/CyberChef/

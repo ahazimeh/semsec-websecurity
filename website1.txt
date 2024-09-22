@@ -42,3 +42,4 @@ directory brutforcing
 dirsearch // search for directories, like gobuster bas bigger word list
 
 he took the id of an image in the series and then deleted the series, the image from fb got deleted
+
