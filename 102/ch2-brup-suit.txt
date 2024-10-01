@@ -34,3 +34,7 @@ if(requestResponse.response().statusCode() === 301) {
 -I can also download scope settings then
   go to project -> project settings then load
 
+Target -> sitemap: I am able to view the response I got from the website (images ...) // filtering here is same as http history
+
+Foxy Proxy:
+  redirect requests only in a certain browser
