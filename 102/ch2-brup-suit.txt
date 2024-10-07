@@ -41,3 +41,14 @@ Foxy Proxy:
 
 proxy settings -> response intercept rule, I can check request intercept rules to let burp intercept responses as well
 request, response, and ws interception rules
+
+manage group: right click on tab and add to a group
+
+burp settings -> match and replace -> add
+  type: Request header
+  Match: Referer: https://.. // keep empty if I want to add rather than match and replace
+  replace: Referer: ht....
+  // only apple to in scope items
+
+decoder
+  I can decode by selecting it in the inspector
