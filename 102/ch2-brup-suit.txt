@@ -52,3 +52,16 @@ burp settings -> match and replace -> add
 
 decoder
   I can decode by selecting it in the inspector
+
+intruder: brute force
+
+intruder attacks:
+  Sniper
+  Battering Ram
+  Pitchfork
+  Cluster Bomb
+
+sniper (will accept 1 payload set)
+Battering Ram (will accept 1 payload set) // but it will update all payloads with the same value
+Pitchfork (will accept several payload set) // each file will loop once
+Cluster Bomb (will accept several payload set) // but here it will look for all combinations
