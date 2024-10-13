@@ -65,3 +65,23 @@ sniper (will accept 1 payload set)
 Battering Ram (will accept 1 payload set) // but it will update all payloads with the same value
 Pitchfork (will accept several payload set) // each file will loop once
 Cluster Bomb (will accept several payload set) // but here it will look for all combinations
+
+comparer: compares difference between 2 requests or responses
+
+logger++: I can search for keywords (it is available for pro version of burp as well)
+
+Troubleshooting
+Most  issues that researchers face when they start using Burp Suite:
+  No internet connection
+  Burp Suite Closed
+  Different ports configuration
+Internet is too slow, and the webtsite is frozen
+Request not showing in Burp History
+  Different ports configuration
+  Proxy not set up
+Antivirus
+-some antivirus may not allow burp to take the request
+or not able to use the burp browser
+-there could be issue with different port for configuration
+-closed burp suite no connection
+-forgot intercept on
