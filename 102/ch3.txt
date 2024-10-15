@@ -1,0 +1,18 @@
+owasp authentication cheat sheet
+  secure password policies
+  2fa/mfa implementation
+  password hashing
+  Accout Lockout Policies (as facebook sending message to verify when opening from new location, they may lock your account)
+  rate limiting
+  captcha(after some tries for password I can ask him for captcha to protect against brutforce)
+
+OAuth, OpenID
+
+Set-Cookie header
+
+http only
+secure
+same site
+domain
+path
+expire/age
