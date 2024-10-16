@@ -11,8 +11,30 @@ OAuth, OpenID
 Set-Cookie header
 
 http only
-secure
+secure (only send the cookie when having https domain)
 same site
-domain
-path
+domain (.domain) // will send the cookie to all subdomains
+path (only send the cookie when going to certain path)
 expire/age
+
+
+same site
+  if I click on a button from outside of a site to go to certain site the cookie should not be used
+    (it compares protocol, domain, and TLD(top level domain) )
+      // subdomain are ignored so it is same site
+      // also for port
+
+We have multiple ways to visit a website
+  Top-Level-Navigation
+  Embeded Content
+  XHR, Fetch API
+
+Top-Level-Navigation
+  changing a website url by clicking a button and navigating
+  changing the url manually
+  html redirection (a and href)
+  js redirection
+  html form
+Embeded Content (view other website content)
+  image, iframe
+XHR, Fetch API
