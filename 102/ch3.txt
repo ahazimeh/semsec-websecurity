@@ -13,7 +13,7 @@ Set-Cookie header
 http only
 secure (only send the cookie when having https domain)
 same site
-domain (.domain) // will send the cookie to all subdomains // domain sends the cookie cross site (it cars about be url)
+domain (.domain) // will send the cookie to all subdomains // domain sends the cookie cross site (it care about be url)
 path (only send the cookie when going to certain path)
 expire/age
 
@@ -29,7 +29,7 @@ We have multiple ways to visit a website
   Embeded Content
   XHR, Fetch API
 
-Top-Level-Navigation
+Top-Level-Navigation (from same site we can call it (first party))
   changing a website url by clicking a button and navigating
   changing the url manually
   html redirection (a and href)
@@ -43,3 +43,7 @@ same site: (strict, lax, none)
   it is going to be sent whether it is same site, cross site...
   when it is strict if I come from a different website I will not be able to send the cookies
   lax will send the cookie when navigating through (top level navigation, and the request type is get)
+
+some browsers as chrome don't allow same site none without adding secure property
+
+putting same site lax could protect me against all csrf attacks except for get requests
