@@ -47,3 +47,45 @@ same site: (strict, lax, none)
 some browsers as chrome don't allow same site none without adding secure property
 
 putting same site lax could protect me against all csrf attacks except for get requests
+
+IDOR: check for cookies // same for xss and sql injections (send xss url encode)
+
+privilege escalation: depend on the frontend for the role
+token: try updating attributes in jwt
+
+tokens are more flexible than cookies: I can use the same token on several servers
+attacking
+
+token based authorization:
+  common token attacks
+  jwt attacks
+
+Common Token Attacks
+  Token Leakage
+  Brute Force Attacks
+  Privilege Escalation
+  Token Expiration
+
+Access tokens can be leaked to unauthorized parties. The leaking of access tokens can occur through various names, such as:
+  Vulnerable Endpoints (such as we test endpoint that generates the tokens)
+  code repositories/source code (someone forgot token in code)
+  insecure transmission channel
+
+*******
+Vulnerable Endpoints (test putting wrong password, bruteforce if no rate limit is there then I can report, remove password parameter)
+  yousef sammouda replaced page id by userid and got token for that user
+so the endPoint should take pageId and he tried userId
+
+if I got the password, let us try to bypass 2fa:
+  I may get back with login before entering 2fa
+if token is being sent to another site that should receive it
+access token in js file
+look for keys in the source code: apikey, secret key, brearerToken...
+check strings for apis
+look for automated tools that can help you
+look for github project
+
+for facebook: facebook developer exporer tool
+  graph api explorer
+look for videos, explanations
+https://ahmadmansourr.medium.com/how-i-was-able-to-hack-a-company-via-watching-a-youtube-video-without-any-technical-pentesting-4941753a150a
