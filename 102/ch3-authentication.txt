@@ -89,3 +89,29 @@ for facebook: facebook developer exporer tool
   graph api explorer
 look for videos, explanations
 https://ahmadmansourr.medium.com/how-i-was-able-to-hack-a-company-via-watching-a-youtube-video-without-any-technical-pentesting-4941753a150a
+
+extract file: npx asrar extract path/to/app.asrar extracted/path
+insecure transmission channel (http)
+
+bruteforce
+
+privilege escalation
+  student account can access admin account
+  if an endpoint is for admin but doesn't have impact then report but keep an eye on it
+  token expiration (if a user changed password but tokens didn't get invalidated)
+
+------------
+jwt example:
+xxxxx.yyyyy.zzzzz // base64
+xxxxx // header: algo:hs256, type:jwt
+
+jwt editor extension (burp)
+json web tockens (purp) //replace jwt.io
+
+try to change algo to none, try then to remove signature
+
+
+*******
+https://github.com/ticarpi/jwt_tool // check for jwt vulnerability
+https://bhavukjain.com/blog/2020/05/30/zeroday-signin-with-apple // apple jwt vulnerability
+check previous cves for certain security a website is using
