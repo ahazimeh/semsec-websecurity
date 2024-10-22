@@ -1,0 +1,38 @@
+Sources: (Any js attribute or function that takes user input from anyplace on the page is considered a source function)
+  document.URL
+  location.search
+  document.cookie
+  document.referrer
+
+Sinks: (A potentially harmful JavaScript function. A function is considered a sink if it outputs input to the screen without performing any security checks)
+  element.innerHTML
+  document.write()
+  document.writeln()
+  element.insertAdjacentHTML
+
+Dom based vs reflected
+the vulnerability is a DOM based xss if it is being injected into the dom through the innerHTML property of the message element.
+dom (when I have direct modification to the dom)
+reflected: when I get back http response that is reflected to the user's browser, it doesn't modify the dom
+
+<img src="asdasd" onerror="alert(1)"/> // you can use onload if you can't cause alert to make error
+
+sanitize: encodeURI(message).replace(/%20/g, ' ')
+
+1337 (leet) // leetspeek
+getSearchParamClean
+
+mitigations:
+  Input Validation & Output Encoding
+  Use of Libraries and Frameworks (React, Angular)
+  Content Security Policy (CSP)
+  Http-Only and Secure Cookies
+  Web Application Firewall (WAF) // level of infrastructure
+
+Input Validation:
+  Length Restrictions
+  Types and Format Checking
+  Character Filtering
+  Whitelisting
+  Content-Specific Validation
+Output Encoding // html encoding
