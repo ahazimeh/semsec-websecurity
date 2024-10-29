@@ -76,3 +76,6 @@ This CSP directive allows JavaScript to be loaded and executed from the followin
     data (<script src="data:text/javascript,alert(document.domain)"></script>) // I can't write js code but can't from outside
     unsafe-inline (allows me to write inline code but not use a script from outside)
       // read more on data and unsafe-inline
+
+script-src // script-src-elem and script-src-attr are subset of script-src
+check if I can modify something to header dynamically so I can  add new rules
