@@ -36,3 +36,15 @@ Input Validation:
   Whitelisting
   Content-Specific Validation
 Output Encoding // html encoding
+
+// Filter evasion:
+// in case a website is removing script tags
+<script> -> <src<script>ipt>
+// closed tags are automatically closed
+// so if anything between <> is removed then I can do: <img src=xxx onerror=prompt(1)
+
+use html number: &#40; for ( // don't work
+<svg><script>alert&#40;1)</script> // this works because svg is built on xml which can translate it
+
+--> // if -> is replaced with _
+  I can do --!> // because when html see ! he will switch to comment bang state // because of html standards
