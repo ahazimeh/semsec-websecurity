@@ -79,3 +79,16 @@ This CSP directive allows JavaScript to be loaded and executed from the followin
 
 script-src // script-src-elem and script-src-attr are subset of script-src
 check if I can modify something to header dynamically so I can  add new rules
+
+clickjacking google bounty 5000$ (on sub-domain)
+
+CSP Evaluator
+
+if WAF blocked certain tags then I can bruteforce tags then bruteforce tags and events
+
+replace function in js will replace first instance only
+
+use clickjacking to trick user to submit a form and trigger xss
+
+automating the discovery of xss:
+  xss strike (you can put the full url with ?search= and this tool will try different payloads)
