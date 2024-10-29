@@ -37,7 +37,7 @@ Input Validation:
   Content-Specific Validation
 Output Encoding // html encoding
 
-// Filter evasion:
+*Filter evasion:
 // in case a website is removing script tags
 <script> -> <src<script>ipt>
 // closed tags are automatically closed
@@ -48,3 +48,31 @@ use html number: &#40; for ( // don't work
 
 --> // if -> is replaced with _
   I can do --!> // because when html see ! he will switch to comment bang state // because of html standards
+
+*Content Security Policy (CSP)
+who can this website talks to
+  csp directives
+    default-src
+    script-src
+    style-src
+    img-src
+    media-src
+    report-uri
+    frame-src
+  csp sources:
+    *
+    self
+    data
+    none
+    unsafe-eval
+    unsafe-inline
+Content-Security-Policy: default-src 'self' example.com *.example.com // allow anything taking src attribute to talk to self, example.com website or any sub-domain for it
+default-src 'self'; img-src *; media-src example.org example.net; script-src userscripts.example.com
+
+Content-Security-Policy: script-src 'self' https://example.com https: data;
+This CSP directive allows JavaScript to be loaded and executed from the following sources:
+  The same origin as the web page ("self"), https://example.com, any https, inline script and resources with "data:" schema ("data:")
+    https: (so any https website can be used)
+    data (<script src="data:text/javascript,alert(document.domain)"></script>) // I can't write js code but can't from outside
+    unsafe-inline (allows me to write inline code but not use a script from outside)
+      // read more on data and unsafe-inline
