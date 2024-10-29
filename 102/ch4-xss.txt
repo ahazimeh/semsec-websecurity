@@ -92,3 +92,10 @@ use clickjacking to trick user to submit a form and trigger xss
 
 automating the discovery of xss:
   xss strike (you can put the full url with ?search= and this tool will try different payloads)
+
+resources: owasp filter evasion
+(invicti as well)
+xss polyglot payloads // these are payloads that would work in many scenarios
+(sec list)
+xss port-swigger cheat sheet
+xss vectors cheat sheet
