@@ -157,3 +157,15 @@ exploit.dtd
 xinclude: (I can define sub-xml documents inside xml document)
   <foo xmlns:xi="http://w3.org/2001/XInclude">
   <xi:include parse="text" href="file:///etc/password"/></foo>
+
+port scanning // research
+
+where to search for XXE:
+XML APIs
+SOAP APIs
+Any environment parsing Microsoft Office files (e.g., docx, xlsx, pptx)
+RSS feed parser (as RSS feed are XML-based)
+SAML Authentication processes
+HTML parsing operations, such as converting HTML to PDF
+Functionality handling sitemap.xml files
+Functionality processing SVG files (Avatar Upload)
