@@ -1,0 +1,6 @@
+Why information disclosure occured?
+  Misconfiguration
+  Improper Error Handling - Stack Trace Error (extra information being sent)
+  Inferring (send 2 calls each time with a certain scenario)
+  Flawed design (design of application is wrong where there is a feature shows information that is supposed to be confidential)
+  Leaked information (leak information to 3rd party library or any component)
