@@ -169,3 +169,16 @@ SAML Authentication processes
 HTML parsing operations, such as converting HTML to PDF
 Functionality handling sitemap.xml files
 Functionality processing SVG files (Avatar Upload)
+
+XXE Mitigation
+  disable external entity expansion in xml parsers
+  use safe xml parsers that don't support external entities
+  input validation for XML data
+  implement content security policies to restrict external resource requests
+  update XML parsers and libraries with security patches
+  consider using Web Application Firewalls (WAFs) to block malicious XML payloads
+
+Resources and tricks:
+  XXE injection Payloads
+  HackTricks Payloads
+
