@@ -14,3 +14,9 @@ stack trace error should only be for the developers cause it can cause informati
   piece of source code
   memory address and system resources
   debugging and system information (log files, system parameters)
+
+provide unexpected parameter and get back error which can contain sensitive information
+
+apis overfetching can provide sensitive information
+
+inferring (send 2 different requests and try to conclude something)
