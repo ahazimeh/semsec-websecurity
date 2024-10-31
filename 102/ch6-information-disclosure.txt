@@ -4,3 +4,13 @@ Why information disclosure occured?
   Inferring (send 2 calls each time with a certain scenario)
   Flawed design (design of application is wrong where there is a feature shows information that is supposed to be confidential)
   Leaked information (leak information to 3rd party library or any component)
+
+/.git
+wget -r giturl
+
+stack trace error should only be for the developers cause it can cause information to be leaked
+  source code
+  function names
+  piece of source code
+  memory address and system resources
+  debugging and system information (log files, system parameters)
