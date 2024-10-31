@@ -20,3 +20,13 @@ provide unexpected parameter and get back error which can contain sensitive info
 apis overfetching can provide sensitive information
 
 inferring (send 2 different requests and try to conclude something)
+
+flowed design:
+
+send sensitive data to 3rd party
+
+misrepresentation of info (as fb mentioned that only you can see your email and phone number when the default behavior was for different)
+
+dirsearch -u link
+
+intitle: "index of /" site: "x.com"
