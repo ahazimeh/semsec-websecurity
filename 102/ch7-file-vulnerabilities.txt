@@ -16,3 +16,16 @@ https://github.com/danielmiessler/SecLists/blob/master/Web-Shells/PHP/obfuscated
 
 exfiltrate: unauthorized access
 change extension to PhP, php1...
+
+null byte injection
+php%00.png
+
+devs can prevent upload based on content-type // here I just update content-type
+
+metadata: information related to each image we have (size, type, mime type, image size...)
+metadata:
+EXIF data: (gps coordinates, camera settings (shutter speed, aperture, ISO, date and time)...)
+IPTC Data: description, keywords, copyright
+XMP Data: xml based
+ICC Profile: define color characteristics of image
+File Information: size, resolution
