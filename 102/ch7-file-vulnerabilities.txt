@@ -1,0 +1,11 @@
+CDN: content delivery network
+servers used to take requests from location close to the user
+We cannot brute force CDN links, it is too long so no one can guess the full link of an image
+
+
+try adding php file and check if it can execute
+
+Dangerous PHP Functions
+https://gist.github.com/mccabe615/b0907514d34b2de088c4996933ea1720
+
+https://github.com/flozz/p0wny-shell
