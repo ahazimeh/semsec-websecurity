@@ -39,3 +39,37 @@ exiftool -comment="" logo.jpg -o attack.php
 
 LAB | RCE via polyglot web shell upload (you can change metadata of a property to a php code which will be sent with the image to the server)
 
+DOS: upload huge images
+
+path traversal: ../.. ... // while saving or retrieving files
+  you can also do url encode and send it
+
+<script> inside svg
+svg onload
+
+from filename I can do xss or sql injection (xss by uploading svg and sql injection if the filename is being used with another request)
+
+mitigation:
+  whitelist
+  rename uploaded files: prevent collisison and overwriting by renaming uploaded files.
+  file type verification
+  size
+  avoid directory traversal: validation
+  use sandboxed domain or cloud storage service
+  implement CDN: Utilize CDN since it disables the execution of files
+  Content-Disposition Header: Use "Content-Disposition" header with the value "attachement" when serving files to mark them as downloadable and prevent execution
+
+resources:
+OWASP: Unrestricted File Upload: https://owasp.org/www-community/vulnerabilities/Unrestricted_File_Upload
+
+Portswigger: File upload vulnerabilities: https://portswigger.net/web-security/file-upload
+
+Hack Tricks: File Upload Tricks & Tips: https://book.hacktricks.xyz/pentesting-web/file-upload
+
+Github
+
+https://github.com/HackTricks-wiki/hacktricks/blob/master/pentesting-web/file-upload/README.md
+
+https://github.com/KathanP19/HowToHunt/blob/master/File_Upload/file_upload.md
+
+https://github.com/Az0x7/vulnerability-Checklist/blob/main/File%20Upload/File%20Upload.md
