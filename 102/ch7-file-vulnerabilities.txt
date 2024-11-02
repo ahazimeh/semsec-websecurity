@@ -29,3 +29,13 @@ IPTC Data: description, keywords, copyright
 XMP Data: xml based
 ICC Profile: define color characteristics of image
 File Information: size, resolution
+
+jimpl.com // show metadata
+photopea.com // file info
+exiftool imagePath //to extract metadata
+exiftool -comment="my comment" imagePath
+
+exiftool -comment="" logo.jpg -o attack.php
+
+LAB | RCE via polyglot web shell upload (you can change metadata of a property to a php code which will be sent with the image to the server)
+
