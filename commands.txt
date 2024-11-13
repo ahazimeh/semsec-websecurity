@@ -1,0 +1,10 @@
+subfinder -d spotify.com | httpx -title -status-code | grep -E '[23][0-9][0-9]'
+
+spotify
+
+sublist3r
+
+amas
+
+
+https://www.youtube.com/watch?v=SYExiynPEKM

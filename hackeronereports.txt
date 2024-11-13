@@ -1,0 +1,18 @@
+https://hackerone.com/reports/2312029
+anonymous user can see private info
+https://hackerone.com/reports/2332728
+
+no csrf for certain endpoint
+read more about ssrf
+check for csrf on a sub-domain that can be manipulated
+inject html (can lead users to submit a form or click a button to cause certain action)
+
+years=2017&authors=Hurlburt'XOR(if(now()=sysdate(),sleep(5*5),0))OR' // this request took 25 seconds(time based sql injection)
+Time based SQL injection can lead to the exfiltration of sensitive data from the database.
+
+requests running over http
+
+Maliciously crafted directories mirroring
+info still accissible after a person leaves
+
+SSRF
