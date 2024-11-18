@@ -1,0 +1,7 @@
+abuse refund // try to do a purchase, earn points or gift and then request for refund
+
+check for race condition: 2 people tried to book same room at same time
+also for tranferring money
+promocode: try using it many times in a short time
+
+check for predictability when downloading content

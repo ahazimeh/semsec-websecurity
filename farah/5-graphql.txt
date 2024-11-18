@@ -1,0 +1,48 @@
+
+Introspective Queries
+__ // exclusive on Introspective Queries
+
+__Schema // enables us to fetch the whole schema
+types // types the schema has
+__type(name: "User") // examine a specific argument
+queryType // available query operations in a schema
+
+try go to browser /graphql endpoint
+
+query Introspection {
+    __Schema {
+        types {
+            name
+          }
+      }
+      __type (name:"UserObject") {
+          fields {
+              name
+            }
+        }
+  }
+
+extension inQL Scanner // put the endpoint and it generates the queries for me
+  when I see edges
+    edges {node}
+      edges {node{id username}}
+
+IDOR
+
+Injection
+query availableQueries {
+__schema{
+    queryType{
+        fields {
+            name
+          }
+      }
+  }
+  }
+
+
+query availableQueries {
+  getUser(username: "'") { // sql injection
+    id
+  }
+}
