@@ -1,0 +1,18 @@
+node-goof
+
+template injection
+firstName: {{7*7}}
+lastName: "><img src=x onerror=alert(1)>
+
+// template injection, code injection, or file inclusion
+res.render('account.hbs', profile) // handlebar is being used account.hbs is the template: // profile.layout:'./../package.json' // here we get back package.json
+
+snyk.io // scan for vulnerabilities
+
+// Mustache
+// Can have similar issues since Handlebars is based on Mustache
+res.render('template', { layout: '../../../etc/passwd' })
+
+// Nunjucks
+// Can be vulnerable to path traversal if not properly configured
+res.render('template', { path: '../../../etc/passwd' })

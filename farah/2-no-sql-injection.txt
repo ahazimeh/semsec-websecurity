@@ -1,0 +1,5 @@
+burp extension: content type converter
+
+"password": {
+  "$gt": ""
+},
