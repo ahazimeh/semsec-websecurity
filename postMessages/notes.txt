@@ -1,0 +1,57 @@
+window.postMessage
+
+parent sends message
+parent listens for confirmation message
+child listens for message
+child sends confirmation
+
+postMessage works for:
+  Between iframes and parent windows
+  Between windows/tabs opened with window.open()
+  Between worker threads (Web Workers) and main thread
+  Between browser windows from the same origin
+  Between service workers and web pages
+
+The basic syntax remains similar:
+
+--------------------
+for project 1:
+  php -S localhost:8000 listener.html
+  php -S localhost:8001 sender.html
+  go to localhost:8001
+
+cross domain and cross window communication // document.domain | Window.postMessage
+
+// <input name='{"amount":100, "to":"attacker", "': value='"}' />
+--------------------
+
+//research
+  window.opener.postMessage({},"https://our.intern.facebook.com")
+
+I can have my own site that can open a window and then replace the url I have to navigate to another window
+
+window.opener // gives me the url the website was opened from
+
+
+apps.facebook.com
+  inside of it there is the iframe (app.example.com)
+
+apps.facebook.com (postMessage)-> page_proxy (post http)-> iframe
+I care about app is sending to proxy
+
+// send postMessage to the opener which is "https://our.alfa.facebook.com"
+our.opener.postMessage({
+    "type": "rp",
+}, "https://our.alfa.facebook.com")
+
+//
+const openedWindow = window.open('https://www.google.com');
+
+// Later, even after navigation, you can still use the stored reference
+window.location.href = 'https://www.youtube.com';
+
+// You can still send messages to the opened window using the stored reference
+setTimeout(openedWindow.postMessage({
+    "type": "message"
+}, "https://example.com"),3000)
+

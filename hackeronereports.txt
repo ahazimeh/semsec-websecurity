@@ -16,3 +16,6 @@ Maliciously crafted directories mirroring
 info still accissible after a person leaves
 
 SSRF
+
+// https://www.youtube.com/watch?v=pk7oYuz4x0Q
+https://ysamm.com/?paged=1

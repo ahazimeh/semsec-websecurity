@@ -1,0 +1,31 @@
+SSRF
+
+not invalidating sessions after logout/reset password
+Reusing session tokens
+login to a plarform and use the same token in another platform due to missing aud or not checking it // weekness
+
+Allowing concurrent sessions without user awareness
+Not rotating session IDs after login
+Missing 'aud' (audience) claim validation
+Improper key rotation practices
+Token replay attacks
+Algorithm switching attacks
+
+Business Logic Flaws
+
+Race conditions
+Price manipulation
+Permission bypasses
+
+sublist3r
+
+
+exploit hosted in fbsbx.com //
+
+victim visits attacker website
+  this page opens another page // html2
+  navigate to proxy // document.location.href = 'https://our.alpha.facebook.com/platform/page_proxy/?version=X#_self';">
+
+html2 // redirect.php
+
+window.open("https://www.google.com")
