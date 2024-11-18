@@ -1,0 +1,7 @@
+1-signature not checked // sometimes just removing it will make it not checked
+
+2-email: admin<!--notadmin-->@test.com // the comment will be ignored by service provider to logme in with admin@test.com
+
+3-saml replay // use saml response to login multiple times
+
+4-xml external entities will also work here

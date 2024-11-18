@@ -32,3 +32,5 @@ const token = jwt.sign(payload, SECRET_KEY, signOptions);
 HS256
 jwtbrute
 JWT cracker
+
+https://swapcard.eu.auth0.com/.well-known/openid-configuration
