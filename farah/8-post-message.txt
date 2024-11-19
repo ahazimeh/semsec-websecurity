@@ -1,0 +1,2 @@
+a parent window can send message to child and a child window can sene messge to parent
+have to verify that the communication is secure both ways

@@ -1,0 +1,3 @@
+files that are cashed are usually public, static, and usually don't contain any sensitive information: stylesheet, scripts, images
+
+profile/nonexistance.css // if it redirects opened the same as profile then it could be cashed because

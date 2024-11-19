@@ -1,0 +1,8 @@
+reusing token // sometimes the client doesn't expire used tokens // code not expired
+
+redirectUrl not verified properly so the attacker can get the code
+  you can try changin the redirectUrl to a subdomain or page with xss vulnerability or open redirect
+
+state parameter is options so if it is not present then it is open for csrf attacks
+
+// need to learn how auth2.0 works
