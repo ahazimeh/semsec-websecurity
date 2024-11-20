@@ -1,0 +1,1 @@
+https://www.google.com/search/..# // this will turn into www.google.com, # is used to ignore the rest of the url
