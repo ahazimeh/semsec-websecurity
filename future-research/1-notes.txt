@@ -67,3 +67,10 @@ Client-side desync vulnerabilities
 
 *
 14
+
+*
+ssrf
+15
+https://www.youtube.com/watch?v=z1FpSFG2KpY&list=PLvxs_epf2X91OBhbtGubo6p-foIuLNx_W&index=15
+BBRE premium
+BBRE.DEV/PREMIUM
