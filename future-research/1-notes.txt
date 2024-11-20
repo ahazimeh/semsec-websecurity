@@ -74,3 +74,5 @@ ssrf
 https://www.youtube.com/watch?v=z1FpSFG2KpY&list=PLvxs_epf2X91OBhbtGubo6p-foIuLNx_W&index=15
 BBRE premium
 BBRE.DEV/PREMIUM
+16
+https://www.youtube.com/watch?v=Ga9o--v-grA&list=PLvxs_epf2X91OBhbtGubo6p-foIuLNx_W&index=16
