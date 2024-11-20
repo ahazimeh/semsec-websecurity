@@ -53,3 +53,10 @@ The key is:
 Just uploading symlink is safe
 Danger comes when server follows/processes the symlink
 Need server functionality that reads the uploaded files
+
+*
+<h2!@script>alert(1)<h2!@script>
+
+*
+zipslip // use path traversal zip file to access system files
+  you can unzip a file into a different location and turn it into rce
