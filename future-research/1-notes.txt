@@ -60,3 +60,7 @@ Need server functionality that reads the uploaded files
 *
 zipslip // use path traversal zip file to access system files
   you can unzip a file into a different location and turn it into rce
+
+*
+https://youtu.be/KN8WF1q04no?si=jwLoG1W2HfPRtTlT
+Client-side desync vulnerabilities

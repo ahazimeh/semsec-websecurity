@@ -1,0 +1,4 @@
+you can have 2 requests on burp
+turn off unpack gzip / deflate and put Content-Length 0 // it will send 2 requests if http pipelining is supported
+
+research
