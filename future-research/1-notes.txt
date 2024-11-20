@@ -64,3 +64,6 @@ zipslip // use path traversal zip file to access system files
 *
 https://youtu.be/KN8WF1q04no?si=jwLoG1W2HfPRtTlT
 Client-side desync vulnerabilities
+
+*
+14
