@@ -1,0 +1,13 @@
+https://youtu.be/JiMzpjgAXv8?si=0xxCXgrOE95KDHBk
+  check for endpoints on js files
+  aspxauth cookie
+  find 2 applications using aspxauth cookies
+    App1 allows registration and App2 don't
+    they must be running on the same server
+    you must know the username from App1
+    validation and decryption keys are shared between these 2 applications
+
+    reason is that keys are derived from <machineKey /> and those keys are derived from machines properties
+    so with multiple websites running on same server will have same keys
+
+    *summary: 2 applications using same keys

