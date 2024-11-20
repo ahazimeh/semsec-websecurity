@@ -1,0 +1,2 @@
+try uploading a file for someone else and check if you would have access to it
+try uploading path traveral link and check response
