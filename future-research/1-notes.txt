@@ -76,3 +76,10 @@ BBRE premium
 BBRE.DEV/PREMIUM
 16
 https://www.youtube.com/watch?v=Ga9o--v-grA&list=PLvxs_epf2X91OBhbtGubo6p-foIuLNx_W&index=16
+
+*
+https://www.youtube.com/watch?v=wc4jARFuVYg&list=PLvxs_epf2X91OBhbtGubo6p-foIuLNx_W&index=17
+  Check Immunify to learn web3
+
+*
+test token public key private key
