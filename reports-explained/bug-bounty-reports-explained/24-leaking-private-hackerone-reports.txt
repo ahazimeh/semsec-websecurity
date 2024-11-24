@@ -1,0 +1,6 @@
+fetch 2 requests // 1 that has no result and the other which may contain results
+then check for timing and if there is big difference the probably the other request returned data
+
+the browser will put the first request in a single single envelop waiting for the response
+after the other requests will be packed together in a single envelop if they are short (since they are in the queue)
+so we can send 1 big reqeust (big body) which will be sent in a single envelop and then put the 2 requests in another envelop

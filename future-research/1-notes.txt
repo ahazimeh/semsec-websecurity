@@ -83,3 +83,6 @@ https://www.youtube.com/watch?v=wc4jARFuVYg&list=PLvxs_epf2X91OBhbtGubo6p-foIuLN
 
 *
 test token public key private key
+
+*24
+cross-site leaks
