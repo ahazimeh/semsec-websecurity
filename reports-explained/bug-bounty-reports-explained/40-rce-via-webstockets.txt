@@ -1,0 +1,1 @@
+insecure websocket connection // web socket connection don't follow same origin protocol

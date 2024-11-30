@@ -1,0 +1,3 @@
+if there is an amount sent to and changing it will ruin the hash, then maybe the hash doesn't include & and = signs where we can modify some values for a bypass
+
+research rce for files on os
