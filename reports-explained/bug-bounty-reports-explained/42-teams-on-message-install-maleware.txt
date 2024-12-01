@@ -1,0 +1,24 @@
+Common template engines vulnerable to SSTI if not properly secured include:
+
+Jinja2 (Python) - Tested with {{7*7}} or {{config}}
+Twig (PHP) - Similar {{7*7}} syntax
+ERB (Ruby) - Uses <%= 7*7 %>
+Pug/Jade (Node.js) - Uses #{7*7}
+Mustache (Multiple languages) - {{7*7}}
+EJS (Node.js) - <%= 7*7 %>
+Thymeleaf (Java) - ${7*7}
+FreeMarker (Java) - ${7*7}
+Velocity (Java) - #set($x = 7*7)
+Django templates - {{ 7|add:7 }}
+
+null byte: \x00, \u0000, or %00
+
+for electron applicatoin we need to use electronSafeIPC to communicate from the renderer with the main process
+
+renderer can include a webview
+<webview src="github.com" preload="./test.js"></webview> // preload can only execute a file in the victim computer
+
+so stage 1: save a file on victim computer
+stage 2: execute the file
+
+https://www.youtube.com/watch?v=iXYMxXkBNtY&list=PLvxs_epf2X91OBhbtGubo6p-foIuLNx_W&index=42

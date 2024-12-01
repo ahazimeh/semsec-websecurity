@@ -1,0 +1,10 @@
+myvariable.__proto__
+
+myvariable.__proto__.isAdmin = true // so all variable will has object.isAdmin = true by modifying the proto of any object
+
+let property = object.abc || harmless_default
+eval(property)
+
+for frontend you can achieve mostly xss, but for backend it could lead to rce, idor, lfi... // research lfi
+
+// resarch https://www.youtube.com/watch?v=KVDOIFeRaPQ&list=PLvxs_epf2X91OBhbtGubo6p-foIuLNx_W&index=44
