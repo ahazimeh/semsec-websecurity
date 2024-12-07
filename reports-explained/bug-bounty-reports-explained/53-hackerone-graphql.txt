@@ -1,0 +1,37 @@
+node based access control
+edge based access control
+
+node based approach
+query {
+  node(id: "user-123") {
+    ... on User {
+      id
+      name
+      posts(first: 10, after: "cursor123") {
+        edges {
+          cursor
+          node {
+            id
+            title
+          }
+        }
+        pageInfo {
+          hasNextPage
+          endCursor
+        }
+      }
+    }
+  }
+}
+
+edge based approach
+query {
+  user(id: "user-123") {
+    id
+    name
+    posts {
+      id
+      title
+    }
+  }
+}
