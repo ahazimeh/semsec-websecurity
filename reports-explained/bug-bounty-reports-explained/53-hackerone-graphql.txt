@@ -35,3 +35,21 @@ query {
     }
   }
 }
+
+
+query {
+    User(name:"test") {
+        edges{
+        node {
+            severity
+          }
+          }
+      }
+  }
+query {
+    User(name:"test") {
+        node {
+            severity
+          }
+      }
+  }
