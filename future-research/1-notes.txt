@@ -90,3 +90,7 @@ test token public key private key
 
 *24
 cross-site leaks
+
+*
+open redirect and ssrf
+https://www.youtube.com/watch?v=Uklsk1WZ2EU&list=PLvxs_epf2X91OBhbtGubo6p-foIuLNx_W&index=47

@@ -1,0 +1,8 @@
+http user smuggling
+
+research
+https://youtu.be/gzM4wWA7RFo?si=bZcRI7FXKf3XgUVt
+http request smuggling vulnerability
+
+frontend server
+Content-Length Transfer-Encoding // CL.TE

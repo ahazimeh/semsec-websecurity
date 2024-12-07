@@ -1,0 +1,7 @@
+most times 2 pages are the same if host and request are the same
+
+https://www.youtube.com/watch?v=N6F2vngktrw&list=PLHQXv_uz3xae4zLet2c7yX-OpTR5WD6iC&index=10
+burp suite extension: param minor // help discover unkeyed input
+
+research cache poisoning more
+https://www.youtube.com/watch?v=ZOBwQmfrIOM&list=PLvxs_epf2X91OBhbtGubo6p-foIuLNx_W&index=46

