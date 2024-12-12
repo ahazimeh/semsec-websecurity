@@ -1,4 +1,4 @@
-*
+done*
 zipslip // use path traversal zip file to access system files
   you can unzip a file into a different location and turn it into rce
 
