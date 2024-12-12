@@ -29,14 +29,13 @@ Media converters
 Thumbnail generators
 
 Key point: Any file that gets processed by server-side tools could potentially lead to RCE if those tools have vulnerabilities.
-(Note: This is explained for educational/defensive purposes only)
 
 *
 { 7 * 7 }
 
 hackers:
 william bowling, yousif sammouda
-
+reached here
 *
 1-Upload ZIP with symlink:
 ln -s /etc/passwd profile.jpg
