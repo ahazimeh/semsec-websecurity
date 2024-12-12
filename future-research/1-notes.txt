@@ -21,6 +21,7 @@ ExifTool command injection
 
 reached here
 4-CSV files in Excel:
+csv injection
 =cmd|' /C calc'!A0
 5-Files that trigger vulnerabilities in processing libraries:
 PDF processors
